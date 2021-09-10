@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 *{
     margin:0;
     padding: 0;
@@ -25,19 +28,33 @@ body{
      justify-content: center;
     align-items: center; 
     margin: auto;
+    font-family: 'Architects Daughter', cursive;
+   
+   
    
     /* width: auto; */
 }
 
+.temp{
+  font-family: 'Architects Daughter', cursive;
+  /* font-size:100px; */
+}
 ul {
     display: flex;
+    
   }
   
   li {
+    
     list-style: none;
-    font-size: 100px;
+    /* font-size: 100px; */
+    font-size: 120px;
     font-weight: bold;
     letter-spacing: 8px;
+
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
   
   .fire li {
@@ -48,20 +65,36 @@ ul {
     color: white;
   }
   
-  .wrapper:hover li {
+  /* .wrapper:hover li {
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-  
+   */
+
+/*    
   .wrapper:hover .fire li {
     animation-name: fire-color;
   }
   
   .wrapper:hover .ice li {
     animation-name: ice-color;
+  } */
+  
+
+   
+   .fire li {
+    animation-name: fire-color;
   }
   
+   .ice li {
+    animation-name: ice-color;
+  }
+
+
+
+
+
   /* Animation delay for each letter */
   li:nth-child(1) {
     animation-delay: 0;
@@ -83,7 +116,9 @@ ul {
     animation-delay: 0.4s;
   }
   
-  
+  #input-box{
+    font-family: cursive;
+  }
   
   
   /* Fire Animation */
@@ -148,6 +183,10 @@ ul {
     li{
         font-size: 65px;
     }
+    .title{
+      margin-bottom: 30px;
+    }
+   
 }
 
 @media  (max-width:400px) {
@@ -155,7 +194,9 @@ ul {
     li{
         font-size: 50px;
     }
-
+.title{
+  margin-bottom: 40px;
+}
     .app-main{
         max-width:290px; 
     }
@@ -181,7 +222,9 @@ ul {
     /* width:50vh ; */
     width:370px ;
 
-    margin: 40px auto; 
+    /* margin: 40px auto; */
+    margin: 0 auto;
+    /* margin-bottom: 400px; */
     background-color: rgba(240,248,255,0.6);
     padding: 20px;
     text-align: center;
@@ -231,7 +274,7 @@ ul {
 }
 
 .temp{
-    font-size: 50pt;
+    font-size: 70pt;
     font-weight: 700;
     margin: 20px 0;
     text-shadow: 2px 4px rgba(0,0,0,0.3);
