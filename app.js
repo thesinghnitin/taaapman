@@ -12,15 +12,15 @@ const weatherApi= {
     baseUrl: "https://api.openweathermap.org/data/2.5/weather"
 }
 
-// http://geoplugin.net/json.gp
+http://geoplugin.net/json.gp
 
-// let c= geoplugin_city();
+let c= geoplugin_city();
 
 
-// console.log(c);
-// console.log(geoplugin_region());
-// getWeatherReport(c);
-// document.querySelector('.weather-body').style.display="block"
+console.log(c);
+console.log(geoplugin_region());
+getWeatherReport(c);
+document.querySelector('.weather-body').style.display="block"
 
 
 const searchInputBox= document.getElementById('input-box');
