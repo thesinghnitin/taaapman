@@ -14,7 +14,7 @@ const weatherApi= {
 
 http://geoplugin.net/json.gp
 
-let c= geoplugin_city();
+var c= geoplugin_city();
 
 
 console.log(c);
